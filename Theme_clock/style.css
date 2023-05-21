@@ -8,7 +8,7 @@
     --secundary-color: #fff;
 }
 html {
-    transform: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
 }
 
 
@@ -64,6 +64,7 @@ body {
     width: 3px;
     height: 65px;
     transform-origin: bottom center;
+    transition: all 0.5s ease-in;
 }
 
 .needle.hour {
