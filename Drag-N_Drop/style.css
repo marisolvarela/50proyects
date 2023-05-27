@@ -39,6 +39,8 @@ body {
 
 .hovered {
     background-color:#333 ;
+    border-color: white;
+    border-style: dashed;
 }
     
 
