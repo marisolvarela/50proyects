@@ -86,7 +86,5 @@ colorEl.addEventListener('change', (e) =>  color = e.target.value)
 
 clearBtn.addEventListener('click',()=> {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
-    colorEl.style.color = 'black'
-    
 })
 
