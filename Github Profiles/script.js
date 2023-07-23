@@ -21,7 +21,9 @@ async function getUser(username) {
       createUserCard(data)
 
     } catch(err){
-        console.log(err)
+        if(err.response.status === 404) {
+            createErrorCArd('No profile with this username')
+        }
     }
 }
 
@@ -45,6 +47,15 @@ function createUserCard (user) {
     </div>
 </div>
     
+    `
+    main.innerHTML = cardHTML
+}
+
+function createErrorCArd(msg) {
+    const cardHTML = `
+    <div class="card">
+    <h1> ${msg}</h1>
+
     `
     main.innerHTML = cardHTML
 }
